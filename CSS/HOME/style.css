@@ -107,16 +107,53 @@ body {
     border-bottom-left-radius: 10px;
     display: inline;
     margin: 12PX;
+    margin-right: 2px;
         
 }
 
 .body-promt input {
     all: unset ;
     caret-color: #fff;
-    width: 80%;
+    width: 60%;
     font-size: large;
     color: white;
+    margin-left: 5px;
     
+}
+
+#response-promt {
+    display: flex;
+    width: 100%;
+    height: 89%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.folder-proyects {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    color: rgb(0, 255, 102);
+}
+
+.aboutme-promt {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    color: rgb(149, 0, 255);
+}
+
+.skills-promt {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    color: rgb(0, 110, 255);
+
 }
 
 span {
