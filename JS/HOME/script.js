@@ -7,8 +7,8 @@ const promtImput = document.getElementById('imput-promt')
 const responsePromt = document.getElementById('response-promt-home-ls')
 const lsProyects = document.getElementById('response-promt-proyects-ls')
 const routeBox = document.getElementById('route')
-
-
+const closeTodolist = document.getElementById('circle-red-todolist')
+const todolistc = document.getElementById('todolist')
 function ls(folder){
     switch(folder){
         case 'Home':
@@ -41,7 +41,8 @@ function aboutme(folder){
 
 function todolist(folder){
     if (folder=="Proyects"){
-        
+        lsProyects.style.display = 'none'
+        todolistc.style.display = 'block'
     }
 }
 
@@ -52,7 +53,7 @@ const commads = {
     "cd Proyects": proyects,
     "cd About Me": aboutme,
     "ls" : ls,
-    "to do list": todolist
+    "todolist": todolist
     
 }
 
@@ -79,6 +80,12 @@ function mazimizePromt(){
     promt.style.width = '100vw'
     promt.style.height = '90vh'
 })
+
+closeTodolist.addEventListener('click',
+function (){
+    todolistc.style.display = 'none' 
+}
+)
 
 promtMinimize.addEventListener('click',
 function minimizePromt(){

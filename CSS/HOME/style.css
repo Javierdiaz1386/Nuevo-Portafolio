@@ -186,7 +186,8 @@ display: flex;
 }
 
 #todolist {
-    background-color: #000000a7;
+    display: none;
+    background-color: #0000007e;
     width: 50%;
     height: 80%;
     position: fixed;
@@ -206,7 +207,7 @@ display: flex;
 
 .css-icon {
     color: white;
-    scale: 1.9;
+    scale: 4;
     margin: 12px;
     transition: scale 0.5s;
 }
@@ -214,34 +215,50 @@ display: flex;
 .python-icon {
     margin: 12px;
     color: #fff;
-    scale: 1.9;
+    scale: 4;
     transition: scale 0.5s;
 }
 
 .python-icon:hover {
     color: #ffe100;
-    scale: 2.1;
+    scale: 4.2;
 }
 
 .css-icon:hover {
     color: #304ef6;
-    scale: 2.1;
+    scale: 4.2;
 }
 
 .html-icon {
     margin: 12px;
     color: #fff;
-    scale: 1.9;
+    scale: 4;
     transition: scale 0.5s;
 }
 
 .html-icon:hover {
     color: #ff5e00;
-    scale: 2.1;
+    scale: 4.2;
 }
 
 .tecno-use {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    height: 40%;
+    align-items: center;
+}
+
+.sql-icon {
+    
+    width: 20px;
+}
+
+#circle-red-todolist {
+    background-color: #ff0000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 12px;
+    transition: transform 0.3s;
 }
