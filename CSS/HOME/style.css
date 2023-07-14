@@ -43,12 +43,13 @@ body {
 
 
 .promt {
+    display: none;
     background-color: rgb(0, 0, 0,.65);
     width: 80vw;
     height: 80vh;
     position: fixed;
     top: 10%;
-    visibility: hidden;
+    
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -56,7 +57,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     opacity: 1;
-    transition: opacity 0.5s, visibility 0.5s, width 0.3s, height 0.3s;
+    transition: opacity 0.5s, display 0.5s, width 0.3s, height 0.3s;
     border: 3px solid mediumorchid;
     backdrop-filter: blur(5px);
 }
@@ -121,14 +122,32 @@ body {
     
 }
 
-#response-promt {
-    display: flex;
+#response-promt-home-ls {
+    display: none;
     width: 100%;
     height: 89%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     flex-wrap: wrap;
-    visibility: hidden;
+    
+}
+
+#response-promt-proyects-ls {
+    display: none;
+    width: 100%;
+    height: 89%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.item-proyects {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: fit-content;
+    color: rgb(255, 0, 0);
+
 }
 
 .folder-proyects {
@@ -161,4 +180,68 @@ span {
 }
 
 
+.prueba {
+background-color: #000;
+display: flex;
+}
 
+#todolist {
+    background-color: #000000a7;
+    width: 50%;
+    height: 80%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.img-todolist {
+    width: 100%;
+    
+}
+
+.css-icon {
+    color: white;
+    scale: 1.9;
+    margin: 12px;
+    transition: scale 0.5s;
+}
+
+.python-icon {
+    margin: 12px;
+    color: #fff;
+    scale: 1.9;
+    transition: scale 0.5s;
+}
+
+.python-icon:hover {
+    color: #ffe100;
+    scale: 2.1;
+}
+
+.css-icon:hover {
+    color: #304ef6;
+    scale: 2.1;
+}
+
+.html-icon {
+    margin: 12px;
+    color: #fff;
+    scale: 1.9;
+    transition: scale 0.5s;
+}
+
+.html-icon:hover {
+    color: #ff5e00;
+    scale: 2.1;
+}
+
+.tecno-use {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
